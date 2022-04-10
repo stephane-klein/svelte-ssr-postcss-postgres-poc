@@ -1,4 +1,4 @@
-# Svelte + SSR + PostgreSQL
+# Svelte + SSR + PostCSS + PostgreSQL
 
 ```sh
 $ docker compose up -d postgres
