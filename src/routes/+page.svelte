@@ -1,13 +1,5 @@
-<script context="module">
-export const load = async ({ fetch }) => {
-    return {
-        props: await (await fetch('/users.json')).json()
-    }
-};
-</script>
-
-<script>
-    export let users;
+<script lang="js">
+    export let data;
 </script>
 
 <style lang="postcss">
@@ -55,7 +47,7 @@ export const load = async ({ fetch }) => {
         </tr>
     </thead>
     <tbody>
-        {#each users as user}
+        {#each data.users as user}
         <tr>
             <td>{user.id}</td>
             <td>{user.username}</td>
